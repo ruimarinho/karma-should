@@ -1,7 +1,7 @@
 
 # karma-should
 
-[should](https://github.com/tj/should.js) for [karma](http://karma-runner.github.io).
+[should](https://github.com/shouldjs/should.js) for [karma](http://karma-runner.github.io).
 
 
 ## Status
@@ -25,7 +25,10 @@ Add `should` to `frameworks` and `karma-should` to `plugins` keys in your karma 
 ```js
 module.exports = function(config) {
   config.set({
+    // include 'should' as the assertion library used by 'mocha' (a testing framework), for example
     frameworks: ['mocha', 'should'],
+
+    // by default karma includes 'karma-*', so the next statement is only necessary for custom plugin inclusion
     plugins: ['karma-should']
   });
 };
