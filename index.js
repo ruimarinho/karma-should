@@ -23,7 +23,7 @@ var pattern = function(file) {
  */
 
 var framework = function(files) {
-  files.unshift(pattern(path.resolve(require.resolve('should'), '../../should.js')));
+  files.unshift(pattern(path.resolve(require.resolve('should'), '../should.js')));
 };
 
 /**
