@@ -1,7 +1,7 @@
 
 # karma-should
 
-Use [should.js](https://github.com/shouldjs/should.js) with [karma](http://karma-runner.github.io) tests.
+Use [should.js](https://github.com/shouldjs/should.js) (2.0.2+) with [karma](http://karma-runner.github.io) tests.
 
 ## Status
 

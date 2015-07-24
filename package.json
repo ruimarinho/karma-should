@@ -1,41 +1,37 @@
 {
   "name": "karma-should",
-  "version": "0.0.1",
-  "description": "should for karma",
-  "main": "./index.js",
-  "scripts": {
-    "changelog": "./node_modules/.bin/github-changes --owner seegno --repository karma-should --auth --only-pulls --use-commit-body --title 'Changelog' --date-format '/ YYYY-MM-DD'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/seegno/karma-should"
-  },
-  "keywords": [
-    "karma",
-    "karma-plugin",
-    "should",
-    "should.js"
-  ],
-  "author": {
-    "name": "Rui Marinho",
-    "email": "rui.marinho@seegno.com"
-  },
+  "version": "1.0.0",
+  "description": "Use should.js with karma tests",
   "contributors": [
+    {
+      "name": "Rui Marinho",
+      "email": "rui.marinho@seegno.com"
+    },
     {
       "name": "João Granado",
       "email": "joao.granado@seegno.com"
     }
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/seegno/karma-should/issues"
-  },
   "homepage": "https://github.com/seegno/karma-should",
+  "bugs": "https://github.com/seegno/karma-should/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seegno/karma-should"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "karma",
+    "karma-plugin",
+    "should",
+    "shouldjs",
+    "should.js"
+  ],
+  "scripts": {
+    "changelog": "github_changelog_generator --no-issues"
+  },
   "peerDependencies": {
     "karma": ">=0.10.9",
     "should": ">=2.0.2"
-  },
-  "devDependencies": {
-    "github-changes": "0.0.16"
   }
 }
