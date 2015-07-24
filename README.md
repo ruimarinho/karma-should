@@ -1,8 +1,7 @@
 
 # karma-should
 
-[should](https://github.com/tj/should.js) for [karma](http://karma-runner.github.io).
-
+Use [should.js](https://github.com/shouldjs/should.js) with [karma](http://karma-runner.github.io) tests.
 
 ## Status
 
@@ -10,44 +9,39 @@
 
 ## Installation
 
+Install the package via `npm`:
 
-Install the module via npm:
-
-```sh
-$ npm install --save-dev karma-should
+```bash
+$ npm install karma-should --save
 ```
 
+## Usage
 
-## Configuration
-
-Add `should` to `frameworks` and `karma-should` to `plugins` keys in your karma configuration:
+Add `should` as part of `frameworks` property configuration of `karma`. In the following example, the testing framework `mocha` is also included although not required.
 
 ```js
 module.exports = function(config) {
   config.set({
-    frameworks: ['mocha', 'should'],
-    plugins: ['karma-should']
+    frameworks: ['mocha', 'should']
   });
 };
 ```
 
+By default, `karma` loads all `plugins` that are siblings to it and their name matches `karma-*` so no additional configuration is required.
 
-## Usage
-
-All `should` assertions are available in the tests:
+Load `karma` and all `should` assertions will now available in the tests:
 
 ```js
-describe('karma tests with should'), function() {
+describe('karma tests with should', function() {
   var user = {
-    name: 'John'
+    name: 'foo'
   };
 
   it('should have a name', function() {
-    user.should.have.property('name', 'John');
+    user.should.have.property('name', 'foo');
   });
 });
 ```
-
 
 ## License
 
