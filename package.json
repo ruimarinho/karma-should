@@ -33,7 +33,7 @@
   "homepage": "https://github.com/seegno/karma-should",
   "peerDependencies": {
     "karma": ">=0.10.9",
-    "should": "*"
+    "should": ">=2.0.2"
   },
   "devDependencies": {
     "github-changes": "0.0.16"
